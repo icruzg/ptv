@@ -24,7 +24,7 @@
 			<ul>
 				<li><a href="#">Contactanos</a> |</li>
 				<li><a href="#">Cambiar contraseña </a>|</li>
-				<li><a href="#">olvide mi contraseña</a>|</li>
+				<li><a href="#">Olvide mi contraseña</a>|</li>
 			</ul>
 		</div>
 	</footer>
