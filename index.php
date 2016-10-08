@@ -8,20 +8,36 @@
 	<script type="text/javascript" src="js/angular.min.js"></script>
 </head>
 <body>
-	<section class="login">
+	<section id="login">
 		<p id="titulo">Punto de Venta <span> Tortiplus</span> </p>
-		<label class="label_form" for="nombre">Usuario</label>
-		<input  type="text" class="text" name="nombre" id="nombre" placeholder="Usuario">
-		<label class="label_form" for="password">Password</label>
-		<input  type="password"  class="text" name="password" id="password" placeholder="Password">
-		<a href="#" class="boton">entrar</a>
+		<div class="bloque-form">
+			<div class="bloque-label">
+				<label class="label_form" for="nombre">Usuario</label>
+			</div>
+			<div class="bloque-input">
+				<input  type="text" class="text" name="nombre" id="nombre" placeholder="Usuario">
+			</div>
+		</div>
+		<div class="bloque-form">
+			<div class="bloque-label">
+				<label class="label_form" for="password">Password</label>
+			</div>
+			<div class="bloque-input">
+				<input  type="password"  class="text" name="password" id="password" placeholder="Password">
+			</div>
+		</div>
+		<div class="bloque-form">
+			<div class="bloque-boton">
+				<a href="#" class="boton">entrar</a>
+			</div>
+		</div>
 	</section>
 	<footer>
-		<div class="link">
+		<div id="botonera_footer">
 			<ul>
 				<li><a href="#">Contactanos</a> |</li>
 				<li><a href="#">Cambiar contraseña </a>|</li>
-				<li><a href="#">Olvide mi contraseña</a>|</li>
+				<li><a href="#">Olvide mi contraseña</a></li>
 			</ul>
 		</div>
 	</footer>
