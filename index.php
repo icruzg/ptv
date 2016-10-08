@@ -4,20 +4,17 @@
 	<meta charset="utf-8">
 	<title>Punto de Venta</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-	<link rel="stylesheet" href="bower_components/lumx/dist/lumx.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-    
+	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
 	<script type="text/javascript" src="js/angular.min.js"></script>
 </head>
 <body>
 	<section class="login">
-		<p class="Titulo"><h1>Punto de Venta <span> Tortiplus</span></h1> </p>
-		<label for="nombre">Usuario</label>
-		<input type="text" name="nombre" id="nombre">
-		<label for="password">Password</label>
-		<input type="password" name="password" id="password">
-		<a href="#">entrar</a>
+		<p id="titulo">Punto de Venta <span> Tortiplus</span> </p>
+		<label class="label_form" for="nombre">Usuario</label>
+		<input  type="text" class="text" name="nombre" id="nombre" placeholder="Usuario">
+		<label class="label_form" for="password">Password</label>
+		<input  type="password"  class="text" name="password" id="password" placeholder="Password">
+		<a href="#" class="boton">entrar</a>
 	</section>
 	<footer>
 		<div class="link">
