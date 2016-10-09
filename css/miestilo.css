@@ -4,8 +4,9 @@ body{
 }
 
 #botonera_footer{
-	margin: 0 auto;
-	text-align: left;
+	color:#A4A4A4;
+	margin: 3em auto;
+	text-align: center;
 	width: 70%;    
 }
 	#botonera_footer ul{
@@ -15,12 +16,13 @@ body{
 			display: inline-block;	
 		}
 			#botonera_footer ul li a{
-				color:#FF4000;
+				color: #A4A4A4;
 				font-size: 0.8em;
 				text-decoration: none;
 			}
 			#botonera_footer ul li a:hover{
-				color:#2E9AFE;
+				color:#FF4000;
+				text-decoration: underline;
 			}
 #login{
 	border: solid 1px #ccc;
@@ -70,6 +72,11 @@ body{
 	text-decoration: none;
 	padding: 0.5em 2em;
 }
+	.boton:hover{		
+		background: #A4A4A4;
+		color:#FF4000;
+		font-weight: bold;
+	}
 /*---------------------------------------- Clases---------------*/
 .bloque-form{
 	margin: 0.2em auto;
