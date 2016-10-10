@@ -1,5 +1,6 @@
 body{
-	background: #F7F8E0;
+	
+	background: #FAFAFA;
 	font-size: 16px;
 }
 
@@ -101,3 +102,21 @@ body{
 		width: 100%;
 	}
 
+/* -------------------------------------- mensajes */
+.msg{
+	
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 0.5em;
+	width: 50%;	
+}
+	.error{
+		background: #F78181;
+		color: #fff;
+		padding: 1em;
+	}
+	.ok {
+		background: #58FA82;
+		color: #fff;
+		
+	}

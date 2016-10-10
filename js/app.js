@@ -15,6 +15,15 @@ app.controller("firstController",function($scope,$http){
 				.success(function(data){				
 					$scope.datos = eval(data);						
 						console.log($scope.datos["_request"]['respuestaBD']);
+					if($scope.datos["_request"]['respuestaBD']==1){
+						$scope.mensage="Bienvenido";
+						$scope.estiloCSS="msg ok";
+					}
+					else{
+						$scope.estiloCSS="msg error";
+						$scope.mensage="Usuario no registrado";
+
+					}
 					//console.log(' '+ $scope.datos);
 				})
 				.error(function(data){
