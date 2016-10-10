@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html ng-app lang="es">
+<html >
 <head>
 	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Punto de Venta</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
 	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </head>
-<body>
-	<section id="login">
+<body ng-app="milogin" >
+	<section id="login"  ng-controller="firstController">
 		<p id="titulo">Punto de Venta <span> Tortiplus</span> </p>
-		<div class="bloque-form">
+		<div class="bloque-form" >
+		
 			<div class="bloque-label">
 				<label class="label_form" for="nombre">Usuario</label>
 			</div>
 			<div class="bloque-input">
-				<input  type="text" class="text" name="nombre" id="nombre" placeholder="Usuario">
+				<input  type="text" class="text" name="nombre" id="nombre" placeholder="Usuario" ng-model="nombre">
 			</div>
 		</div>
 		<div class="bloque-form">
@@ -23,12 +26,13 @@
 				<label class="label_form" for="password">Password</label>
 			</div>
 			<div class="bloque-input">
-				<input  type="password"  class="text" name="password" id="password" placeholder="Password">
+				<input  type="password"  class="text" name="password" id="password" placeholder="Password" ng-model="password">
 			</div>
 		</div>
 		<div class="bloque-form">
 			<div class="bloque-boton">
-				<a href="#" class="boton">entrar</a>
+					<input type="button" ng-click="addDatos()" name="add">
+				<a href="#" class="boton" ng-click="addDatos()">entrar</a>
 			</div>
 		</div>
 	</section>

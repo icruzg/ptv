@@ -73,8 +73,9 @@ body{
 	padding: 0.5em 2em;
 }
 	.boton:hover{		
-		background: #A4A4A4;
-		color:#FF4000;
+		background: #fff;
+		border: solid 1px #FF4000;
+		color:#FF4000;	
 		font-weight: bold;
 	}
 /*---------------------------------------- Clases---------------*/
@@ -91,7 +92,6 @@ body{
 		width: 45%;	
 	}
 	.bloque-boton{
-	
 		display: inline-block;
 		height: 3em;
 		text-align: right;
