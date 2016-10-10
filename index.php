@@ -31,7 +31,7 @@
 		</div>
 		<div class="bloque-form">
 			<div class="bloque-boton">
-					<input type="button" ng-click="addDatos()" name="add">
+				
 				<a href="#" class="boton" ng-click="addDatos()">entrar</a>
 			</div>
 		</div>
