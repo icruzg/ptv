@@ -7,6 +7,5 @@
             $arreglo["_request"]=array('respuestaBD' => 0 );
         }
     }         
-    print_r( json_encode($arreglo) );
-
+    print_r( json_encode($arreglo));
 ?>
