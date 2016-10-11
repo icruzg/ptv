@@ -14,7 +14,7 @@
 	<section id="login"  ng-controller="firstController">
 		<p id="titulo">Punto de Venta <span> Tortiplus</span> </p>
 		<div class="bloque-form" >
-		
+			
 			<div class="bloque-label">
 				<label class="label_form" for="nombre">Usuario</label>
 			</div>

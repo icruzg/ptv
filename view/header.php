@@ -8,15 +8,17 @@
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/miestilo.css">
 	<script type="text/javascript" src="../js/angular.min.js"></script>
-	<script type="text/javascript" src="../js/app.js"></script>
+	<script type="text/javascript" src="../js/angular-route.min.js"></script>
+
+	<script type="text/javascript" src="../js/appx.js"></script>
 	
 </head>
-<body>
+<body ng-app="appventa">
 <nav>
 	<ul id="navegacion"  class="menu"  >
 
-		<li><a href="#" class="active" >Home</a></li>			
-		<li><a href="#">Tortas</a></li>
+		<li><a href="/" class="active" >Home</a></li>			
+		<li><a href="/tortas">Tortas</a></li>
 		<li><a href="#">Consumibles</a></li>
 		<li><a href="#">Recargas</a></li>		
 		<li><a href="#">Catalogos</a></li>
@@ -30,3 +32,4 @@
 			
 	</ul>
 </nav>
+{{7+3}}
