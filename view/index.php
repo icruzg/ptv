@@ -1,8 +1,11 @@
 <?php include("header.php"); ?>
 <!--  inicia Pagina web    -->	
-<section>
-	Main menu
+<section id="dashboard">
+	<article id="ventas">
+		<h2>Ofertas</h2>		
+	</article>
+	<article id="avisos">
+		<h2>Avisos</h2>
+	</article>
 </section>
-
-
 <?php 	include("footer.php"); ?>

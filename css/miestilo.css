@@ -8,18 +8,19 @@ nav{
 	display: inline-block;
     top: 0;
     width: 100%;
+    background-color: #333
 }
-	nav ul{
+	nav  ul{
 		list-style-type: none;
     	margin: 0;
     	padding: 0;
     	overflow: hidden;
     	background-color: #333;
 	}
-	nav li {
+	nav  li {
     	display: inline-block;
 	}
-	nav li a {
+	nav  li a {
 	    display: block;
 	    color: white;
 	    text-align: center;
@@ -30,17 +31,38 @@ nav{
 	nav li a:hover {
     	background-color: #111;
 	}
-	nav .active {
+	nav  .active {
     	background-color: #FF4000;
+	}
+footer{
+	background-color: #111111;
+	bottom: 0;
+	box-shadow: 0 -1px 2px #111111;
+	height: 45px;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 100000;
+} 
+
+	footer h2{		
+		color: #EEEEEE;
+		font-size: 14px;
+		font-weight: normal;			
+		padding: 1em ;		
+		width: 100%;
 	}
 .avatar-frame{border: 1px solid #c7b89e;}
 .avatar-frame,.avatar-frame img{
+	cursor: pointer;
+    cursor: hand;
 	width: 35px;
 	height: 35px;
 	-webkit-border-radius: 30px; /* Saf3+, Chrome */
 	border-radius: 30px; /* Opera 10.5, IE 9 */
 	/*-moz-border-radius: 30px;  Disabled for FF1+ */	
-	margin : 0.1em 1em 0 0;
+	margin : 0.1em 10em 0 0;
 }
 
 #botonera_footer{
@@ -158,4 +180,50 @@ nav{
 		background: #58FA82;
 		color: #fff;
 		
+	}
+
+#navegacion li ul{
+  height:0;
+  overflow:hidden;
+  -moz-transition-duration:.3s;
+  -webkit-transition-duration:.3s;
+  -o-transition-duration:.3s;
+  transition-duration:.3s;
+  position:absolute;
+  
+}
+#navegacion li:hover ul{
+ border-radius: 0 0  5px 40px;
+  height:10em;
+  
+}
+#navegacion li ul li{	
+    display: block;
+	width: 12em;
+}
+#navegacion li ul li a{
+    text-align: left
+	width: 100%;
+}
+
+/*   */
+#dashboard{
+	
+	margin: 0 auto;
+	width: 100%;	
+}
+	#ventas{
+		border:1px solid #c4c4c4;
+		border-radius: 15px;
+		display: inline-block;
+		margin-left: 0.3em;
+		min-height:25em;
+		width: 68%;
+	}
+	#avisos{			
+		border: 1px solid #c4c4c4;
+		border-radius: 15px;
+		display: inline-block;
+		width: 30%;
+		min-height:25em;
 	}
