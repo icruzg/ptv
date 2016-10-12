@@ -1,40 +1,32 @@
-<!DOCTYPE html>
 <html>
-<script type="text/javascript"  src="js/angular.min.js" > </script>
-
-<script type="text/javascript" src="js/angular-route.min.js"></script>
-<body ng-app="myApp">
-{{3+6}}
-<p><a href="#/">Main</a></p>
-
-<a href="#banana">Banana</a>
-<a href="#tomato">Tomato</a>
-
-<p>Click on the links to change the content.</p>
-
-<p>Use the "otherwise" method to define what to display when none of the links are clicked.</p>
-<div ng-view></div>
-<script type="text/javascript">
-
- var app=angular.module("myApp", ["ngRoute"]);
-app.config(function($routeProvider){
-
-    $routeProvider
-    .when("/banana", {
-        template : "<h1>Banana</h1><p>Bananas contain around 75% water.</p>"
-    })
-    .when("/tomato", {
-        template : "<h1>Tomato</h1><p>Tomatoes contain around 95% water.</p>"
-    })
-    .otherwise({
-        template : "<h1>Nothing</h1><p>Nothing has been selected</p>"
-    });
-});
-</script>
-
-
-
-
-
-</body>
+    <head>
+        <title>RoutingDemo App</title>
+    </head>
+    <body ng-app='routingDemoApp'>
+     
+        <h2>AngularJS Routing Application</h2>
+        <ul>
+            <li><a href="#/">Default Route</a></li>
+            <li><a href="#/computers">Computer Route</a></li>
+            <li><a href="#/printers">Printers Route</a></li>
+            <li><a href="#/blabla">Unknown Route</a></li>
+        </ul>
+         
+        <div ng-view></div>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+      
+        <script>
+            angular.module('routingDemoApp',['ngRoute'])
+            .config(['$routeProvider', function($routeProvider){
+                $routeProvider
+                .when('/',{template:'This is the default Route'})
+                .when('/computers',{template:'This is the computers Route'})
+                .when('/printers',{template:'This is the printers Route'})
+                .otherwise({redirectTo:'/'});
+            }]);
+        </script>
+     
+     
+    </body>
 </html>

@@ -1,12 +1,31 @@
-var app= angular.module("appventa", ["ngRoute"]);
-app.config(function($routeProvider){
-	$routeProvider
-		.when("/",{
-			templateURL: "/ptv/view/index.php"
 
-		})
-		.when("/tortas",{
-			templateURL: "../ptv/view/ptvtortas.php"
-			             
-		})
-});
+  var app=angular.module('appventa',['ngRoute'])
+            app.config(['$routeProvider', function($routeProvider){
+                $routeProvider
+                .when('/',{templateUrl:'../view/home.php'})
+                .when('/tortas',{templateUrl:'../view/ptvtortas.php'})
+                .when('/printers',{templateUrl:'This is the printers Route'})
+                .otherwise({redirectTo:'/'});
+            }]);
+          app.controller('micontroller',function($scope){
+           
+          });
+    // -------------------------------------------------------------------------------- Directiva para css activar Elemento del menu 
+    app.directive('activeLink', ['$location', function (location) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs, controller) {
+        var clazz = attrs.activeLink;
+        var path = attrs.href;
+        path = path.substring(1); //hack because path does not return including hashbang
+        scope.location = location;
+        scope.$watch('location.path()', function (newPath) {
+          if (path === newPath) {
+            element.addClass(clazz);
+          } else {
+            element.removeClass(clazz);
+          }
+        });
+      }
+    }; }]);
+    //-------------------------------------------------------------------------------------------------------------------------------

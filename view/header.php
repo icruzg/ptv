@@ -9,19 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="../css/miestilo.css">
 	<script type="text/javascript" src="../js/angular.min.js"></script>
 	<script type="text/javascript" src="../js/angular-route.min.js"></script>
-
-	<script type="text/javascript" src="../js/appx.js"></script>
-	
+	<script type="text/javascript" src="../js/appx.js"></script>	
 </head>
 <body ng-app="appventa">
-<nav>
-	<ul id="navegacion"  class="menu"  >
 
-		<li><a href="/" class="active" >Home</a></li>			
-		<li><a href="/tortas">Tortas</a></li>
-		<li><a href="#">Consumibles</a></li>
-		<li><a href="#">Recargas</a></li>		
-		<li><a href="#">Catalogos</a></li>
+<nav ng-controller="micontroller">
+	<ul id="navegacion"  class="menu"  >
+		<li><a href="#/"  active-link="active" >Home</a></li>			
+		<li><a href="#/tortas" active-link="active">Tortas</a></li>
+		<li><a href="#" active-link="active">Consumibles</a></li>
+		<li><a href="#" active-link="active">Recargas</a></li>		
+		<li><a href="#" active-link="active">Catalogos</a></li>
 		<li style="float:right;" class="avatar-frame" ><img src="../img/logo.png">
 			<ul class="submenu">
 				<li><a href="#">Nombre Usuario</a></li>
@@ -32,4 +30,3 @@
 			
 	</ul>
 </nav>
-{{7+3}}

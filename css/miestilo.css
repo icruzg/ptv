@@ -212,7 +212,7 @@ footer{
 	margin: 0 auto;
 	width: 100%;	
 }
-	#ventas{
+	#derecha{
 		border:1px solid #c4c4c4;
 		border-radius: 15px;
 		display: inline-block;
@@ -220,10 +220,37 @@ footer{
 		min-height:25em;
 		width: 68%;
 	}
-	#avisos{			
+	#izquierda{			
 		border: 1px solid #c4c4c4;
 		border-radius: 15px;
 		display: inline-block;
 		width: 30%;
 		min-height:25em;
 	}
+	#panel_botonera{
+		border: 1px solid #c4c4c4;
+		border-radius: 15px;
+		margin-bottom: 0.5em;
+		margin-left: 0.3em;
+		width: 68%;
+	}
+		#botonera {
+
+			background: red;
+			display: inline-block;
+			width: 40%;
+		}
+		#botonera ul{
+			list-style: none;		
+		}
+		#botonera ul li {
+			display: inline-block;
+		}
+		#botonera ul li a {
+			text-decoration: none;
+		}
+		#noOrden{			
+			background: blue;
+			display: inline-block;
+			width: 50%;
+		}
