@@ -235,8 +235,6 @@ footer{
 		width: 68%;
 	}
 		#botonera {
-
-			background: red;
 			display: inline-block;
 			width: 40%;
 		}
@@ -244,13 +242,33 @@ footer{
 			list-style: none;		
 		}
 		#botonera ul li {
+			color:#c4c4c4;
 			display: inline-block;
+			margin-right: 0.5em;
+			
 		}
 		#botonera ul li a {
+			border:1px solid #c4c4c4;			
+			border-radius: 5px;
+			color:#c4c4c4;	
 			text-decoration: none;
+			padding: 0.8em 0.5em 0.8em 2.5em;
+			width: 20%;
+
+		}
+		#botonera ul li a:hover{
+			background: #2ECCFA;
+			color: #fff;
+		}
+		#botonera ul li .nuevo{
+			background-image: url(../img/ic_note_add_black_18dp.png);
+			background-repeat: no-repeat;
+		}
+		#botonera ul li .nuevo:hover{
+			background-image: url(../img/ic_note_add_white_18dp.png);
+			background-repeat: no-repeat;
 		}
 		#noOrden{			
-			background: blue;
 			display: inline-block;
 			width: 50%;
 		}
