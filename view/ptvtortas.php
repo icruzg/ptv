@@ -2,8 +2,8 @@
 	 <article id="panel_botonera">
 		 <div id="botonera">
 		 	<ul>
-		 		<li><a href="">+ </a></li>
-		 		<li><a href="">x </a></li>
+		 		<li><a href="" class="nuevo"> Nuevo</a></li>
+		 		<li><a href="">x Cancelar</a></li>
 		 	</ul>
 		 </div>
 		 <div id="noOrden">
@@ -16,4 +16,5 @@
 	<article id="izquierda">
 		<h2>Menu</h2>
 	</article>
+
 </section>
