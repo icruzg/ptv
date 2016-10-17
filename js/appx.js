@@ -3,13 +3,20 @@
             app.config(['$routeProvider', function($routeProvider){
                 $routeProvider
                 .when('/',{templateUrl:'../view/home.php'})
-                .when('/tortas',{templateUrl:'../view/ptvtortas.php'})
+                .when('/tortas',{templateUrl:'../view/ptvtortas.php',
+                    controller :'micontroller' 
+                })
                 .when('/printers',{templateUrl:'This is the printers Route'})
                 .otherwise({redirectTo:'/'});
             }]);
-          app.controller('micontroller',function($scope){
+            app.controller('micontroller',function($scope){
+              $scope.NoOrden =generaNoOrden();   
+              
+              $scope.getNoOrden=function(){
+                  $scope.NoOrden =generaNoOrden();   
+              }
+            });
            
-          });
     // -------------------------------------------------------------------------------- Directiva para css activar Elemento del menu 
     app.directive('activeLink', ['$location', function (location) {
     return {
@@ -29,3 +36,14 @@
       }
     }; }]);
     //-------------------------------------------------------------------------------------------------------------------------------
+
+    //- --------------------- Funciones para generar numero de orden
+    function generaNoOrden(){
+      var fecha= new Date();
+      var dia=fecha.getDate();
+      var mes=fecha.getMonth();
+      var anio = fecha.getFullYear();
+       var h= fecha.getHours()+"" +fecha.getMinutes()+""+fecha.getSeconds(); 
+      console.log(dia+""+mes+""+anio+""+ h);
+      return dia+""+mes+""+anio+""+ h;
+    }
