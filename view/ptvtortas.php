@@ -34,9 +34,9 @@
 				<th>Producto</th><th>Picante</th><th>Complementos</th><th>Extras</th><th>Importe</th><th></th>
 				<tr><td></td><td></td>
 					<td>
-					<table border=0 class="tabla_complemento">
-							<tr><td>Jitomate</td><td>Cebolla</td><td>Frijoles</td><td>Aderezo</td><td>Quesillo</td></tr>
-					</table>
+						<table border=0 class="tabla_complemento">
+								<th>Jitomate</th><th>Cebolla</th><th>Frijoles</th><th>Aderezo</th><th>Quesillo</th>
+						</table>
 					</td>
 				</tr>
 				<tr>

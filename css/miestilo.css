@@ -325,6 +325,8 @@ footer{
 .gridCanasto{
 	width: 100%;
 }
+.gridCanasto tr:nth-child(even) {background: #fff}
+.gridCanasto tr:nth-child(odd) {background: #E6E6E6}
 .tabla_complemento{	
 	font-size: 0.7em;
 	text-align: center;
