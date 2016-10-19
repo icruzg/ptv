@@ -223,8 +223,9 @@ footer{
 	#izquierda{			
 		border: 1px solid #c4c4c4;
 		border-radius: 15px;
-		display: inline-block;
+		display: inline-block;		
 		width: 30%;
+		vertical-align:top;
 		min-height:25em;
 	}
 	#panel_botonera{
@@ -239,21 +240,25 @@ footer{
 			width: 40%;
 		}
 		#botonera ul{
-			list-style: none;		
+				list-style: none;		
 		}
 		#botonera ul li {
 			color:#c4c4c4;
 			display: inline-block;
-			margin-right: 0.5em;
-			
+						
 		}
 		#botonera ul li a {
 			border:1px solid #c4c4c4;			
 			border-radius: 5px;
 			color:#c4c4c4;	
 			text-decoration: none;
+<<<<<<< HEAD
 			padding: 0.8em 1em;
 			width: 20%;
+=======
+			padding: 0.8em 0.5em 0.8em 1.7em;
+			width: 10em;
+>>>>>>> origin/master
 
 		}
 		#botonera ul li a:hover{
@@ -268,7 +273,70 @@ footer{
 			background-image: url(../img/ic_note_add_white_18dp.png);
 			background-repeat: no-repeat;
 		}
+		#botonera ul li .cancelar{
+			background-image: url(../img/ic_note_add_black_18dp.png);
+			background-repeat: no-repeat;
+		}
+		#botonera ul li .cancelar:hover{
+			background-image: url(../img/ic_note_add_white_18dp.png);
+			background-repeat: no-repeat;
+		}
 		#noOrden{			
 			display: inline-block;
 			width: 50%;
 		}
+	.panel_venta{			
+		display: inline-block;	
+		width: 50%;
+		text-align: center;
+	}
+		.panel_venta select{
+			color:#c4c4c4;
+			display: inline-block;		
+			width: 80%;
+		}
+	.panel_pago{
+		
+		display: inline-block;
+		vertical-align:top;
+		width: 45%;
+
+	}
+		
+		.panel_pago span{		
+		display: inline-block;	
+			background: black;
+			font-size:4em;
+			color:#fff;
+			width: 100%;
+			text-align: center;
+		}
+		.panel_pago a{
+			background: #FF4000;			
+			color:#fff;
+			display: block;
+			text-align: center;		
+			text-decoration: none;
+			vertical-align: top;
+			width: 100%;			
+		}
+		.panel_pago a:hover{
+			
+			background: #fff;
+			border:1px solid #FF4000;
+			color: #FF4000;
+
+		}
+.gridCanasto{
+	width: 100%;
+}
+.gridCanasto tr:nth-child(even) {background: #fff}
+.gridCanasto tr:nth-child(odd) {background: #E6E6E6}
+.tabla_complemento{	
+	font-size: 0.7em;
+	text-align: center;
+	width: 100%;
+}
+	.tabla_complemento  td{
+		border-left: 1px solid #c4c4c4;
+	}
