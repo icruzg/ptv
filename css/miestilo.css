@@ -110,9 +110,7 @@ footer{
 	#titulo span{
 		color: #FF4000;
 	}
-
 /*------------------------------------- 	formulario login  */
-
 .text{
 	border: solid #ccc 1px;
 	border-radius: 3px;
@@ -252,14 +250,8 @@ footer{
 			border-radius: 5px;
 			color:#c4c4c4;	
 			text-decoration: none;
-<<<<<<< HEAD
-			padding: 0.8em 1em;
+            padding: 0.9em 1em;
 			width: 20%;
-=======
-			padding: 0.8em 0.5em 0.8em 1.7em;
-			width: 10em;
->>>>>>> origin/master
-
 		}
 		#botonera ul li a:hover{
 			background: #2ECCFA;
@@ -274,11 +266,11 @@ footer{
 			background-repeat: no-repeat;
 		}
 		#botonera ul li .cancelar{
-			background-image: url(../img/ic_note_add_black_18dp.png);
+			background-image: url(../img/ic_highlight_remove_black_18dp.png);
 			background-repeat: no-repeat;
 		}
 		#botonera ul li .cancelar:hover{
-			background-image: url(../img/ic_note_add_white_18dp.png);
+			background-image: url(../img/ic_highlight_remove_white_18dp.png);
 			background-repeat: no-repeat;
 		}
 		#noOrden{			
@@ -330,6 +322,10 @@ footer{
 .gridCanasto{
 	width: 100%;
 }
+	.gridCanasto select{
+		width: 100%;
+		font-size: 0.8em;
+	}
 .gridCanasto tr:nth-child(even) {background: #fff}
 .gridCanasto tr:nth-child(odd) {background: #E6E6E6}
 .tabla_complemento{	
@@ -340,3 +336,61 @@ footer{
 	.tabla_complemento  td{
 		border-left: 1px solid #c4c4c4;
 	}
+.icono {
+	display: block;
+	width: 30%;
+	margin: 0 auto;
+}
+/*-------------------------------------  ToolTip ----------------*/
+[data-tip] {
+    position:relative;
+}
+[data-tip]:before {
+    content:'';
+    /* hides the tooltip when not hovered */
+    display:none;
+    content:'';
+    display:none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #1a1a1a;
+    position:absolute;
+    top:30px;
+    left:35px;
+    z-index:8;
+    font-size:0;
+    line-height:0;
+    width:0;
+    height:0;
+    position:absolute;
+    top:30px;
+    left:35px;
+    z-index:8;
+    font-size:0;
+    line-height:0;
+    width:0;
+    height:0;
+}
+[data-tip]:after {
+    display:none;
+    content:attr(data-tip);
+    position:absolute;
+    top:35px;
+    left:0px;
+    padding:5px 8px;
+    background:#1a1a1a;
+    color:#fff;
+    z-index:9;
+    font-size: 0.75em;
+    height:18px;
+    line-height:18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+    display:block;
+}

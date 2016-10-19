@@ -2,12 +2,12 @@
 	 <article id="panel_botonera">
 		 <div id="botonera">
 		 	<ul>
-<<<<<<< HEAD
-		 		<li><a href="" class="nuevo"> </a></li>
-=======
-		 		<li><a href="" class="nuevo" ng-click="getNoOrden()"> </a></li>
->>>>>>> origin/master
-		 		<li><a href="">x Cancelar</a></li>
+
+		 		
+
+		 		<li data-tip="Nuevo Ticket"><a href="" class="nuevo" ng-click="getNoOrden()"> </a></li>
+
+		 		<li data-tip="Cancelar Ticket"> <a href="" class="cancelar"></a></li>
 		 	</ul>
 		 </div>
 		 <div id="noOrden">
@@ -58,11 +58,11 @@
 							<tr><td><input type="checkbox" name="" checked></td><td><input type="checkbox" name="" checked></td><td><input type="checkbox" name="" checked></td><td><input type="checkbox" name="" checked></td><td><input type="checkbox" name="" checked ></td></tr>							
 						</table>
 					</td>
-					<td>
-						<a href="">Agregar</a>
+					<td data-tip="Agregar Extras">
+						<a href="" ><img  class="icono" src="../img/add.png" alt="Agregar Extra"></a>
 					</td>
 					<td>$ 0.00</td>
-					<td><a href="">X</a></td>
+					<td data-tip="Quitar"><a href="" ><img class="icono" src="../img/del.png" alt="Eliminar"></a></td>
 				</tr>
 				
 			</table>
