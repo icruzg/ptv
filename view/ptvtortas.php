@@ -2,7 +2,7 @@
 	 <article id="panel_botonera">
 		 <div id="botonera">
 		 	<ul>
-		 		<li><a href="" class="nuevo"> Nuevo</a></li>
+		 		<li><a href="" class="nuevo"> </a></li>
 		 		<li><a href="">x Cancelar</a></li>
 		 	</ul>
 		 </div>
