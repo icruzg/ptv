@@ -59,10 +59,10 @@
 						</table>
 					</td>
 					<td data-tip="Agregar Extras">
-						<a href="" ><img  class="icono" src="../img/add.png" alt="Agregar Extra"></a>
+						<a href="" ><img  class="icono" src="../img/add.png"  alt="Agregar Extra"></a>
 					</td>
 					<td>$ {{torta.precio}}</td>
-					<td data-tip="Quitar"><a href="?del={{torta.id}}" ><img class="icono" src="../img/del.png" alt="Eliminar"></a></td>
+					<td data-tip="Quitar"><a ><img class="icono" src="../img/del.png" ng-click="removeRow(torta.id,torta.precio)" alt="Eliminar"></a></td>
 				</tr>
 				
 			</table>

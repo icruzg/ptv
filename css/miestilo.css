@@ -114,6 +114,7 @@ footer{
 .text{
 	border: solid #ccc 1px;
 	border-radius: 3px;
+
 	/* height: 1.5em; */
 	padding: 0.5em;
 	width: 90%;
@@ -283,7 +284,8 @@ footer{
 		text-align: center;
 	}
 		.panel_venta select{
-			color:#c4c4c4;
+			color:#585858;
+			color: ;
 			display: inline-block;		
 			width: 80%;
 		}
@@ -393,4 +395,18 @@ footer{
 [data-tip]:hover:before,
 [data-tip]:hover:after {
     display:block;
+}
+/*  Ventana Modal */
+.modal {
+  display: block;
+  position: fixed;
+  top: 50px; left: 50px; bottom: 50px; right: 50px;
+  background: white;
+  z-index: 100;
+}
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
