@@ -2,9 +2,6 @@
 	 <article id="panel_botonera">
 		 <div id="botonera">
 		 	<ul>
-
-		 		
-
 		 		<li data-tip="Nuevo Ticket"><a href="" class="nuevo" ng-click="getNoOrden()"> </a></li>
 
 		 		<li data-tip="Cancelar Ticket"> <a href="" class="cancelar"></a></li>
@@ -24,13 +21,16 @@
 			<p>
 				<label> T.Venta</label>
 				<select class="text">
-					<option value="0">Venta Mostrador</option>
+					<option value="0">Seleccione Tipo Venta</option>
+					<option value="1">Venta Mostrador</option>
+					<option value="2">Venta Telefoníca</option>
+					<option value="3">Venta WhatsApp</option>
 				</select>
 			</p>
 		</div>
 		<div class="panel_pago">
 	
-			<span>$ 0.00</span>
+			<span>$ {{subtotal}}</span>
 			<a href="#">Generar Ticket</a>
 		</div>
 		<div id="canasto">
@@ -43,8 +43,8 @@
 						</table>
 					</td>
 				</tr>
-				<tr>
-					<td> descripcion prod</td>
+				<tr ng-repeat="torta in datosTortas">
+					<td> {{torta.producto}} </td>
 					<td>
 						<select>
 							<option>Chipotle</option>							
@@ -61,8 +61,8 @@
 					<td data-tip="Agregar Extras">
 						<a href="" ><img  class="icono" src="../img/add.png" alt="Agregar Extra"></a>
 					</td>
-					<td>$ 0.00</td>
-					<td data-tip="Quitar"><a href="" ><img class="icono" src="../img/del.png" alt="Eliminar"></a></td>
+					<td>$ {{torta.precio}}</td>
+					<td data-tip="Quitar"><a href="?del={{torta.id}}" ><img class="icono" src="../img/del.png" alt="Eliminar"></a></td>
 				</tr>
 				
 			</table>
@@ -72,6 +72,7 @@
 	
 	<article id="izquierda">
 		<h2>Menu</h2>
+		<input type="button" name="tester" value="Milanesa" ng-click="addRow(3,'Milanesa Pollo','27.00')">
 	</article>
 
 </section>

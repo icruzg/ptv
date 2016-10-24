@@ -15,8 +15,22 @@
               $scope.getNoOrden=function(){
                   $scope.NoOrden =generaNoOrden();   
               }
+              $scope.datosTortas=[
+               // { 'id':'1' ,'producto':'Milanesa', 'precio': 24.00},
+                //{ 'id':'2' ,'producto':'Milanesa Pollo', 'precio': 27.00},
+              ];
+                $scope.subtotal="0.00";
+              $scope.addRow = function(idT,productoT,precioT){    
+                $scope.datosTortas.push({'id':idT ,'producto':productoT, 'precio': precioT});
+                $scope.id='';
+                $scope.producto='';
+                $scope.precio='';
+                $scope.subtotal= parseFloat($scope.subtotal) + parseFloat(precioT);
+                $scope.subtotal=$scope.subtotal.toFixed(2)
+              }; // fin agregar producto
+            
             });
-           
+          
     // -------------------------------------------------------------------------------- Directiva para css activar Elemento del menu 
     app.directive('activeLink', ['$location', function (location) {
     return {
