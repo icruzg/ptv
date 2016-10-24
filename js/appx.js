@@ -1,5 +1,6 @@
 
-  var app=angular.module('appventa',['ngRoute'])
+  var app=angular.module('appventa',['ngRoute','angularModalService'])
+    // http://es.stackoverflow.com/questions/3193/c%C3%B3mo-puedo-crear-un-di%C3%A1logo-modal-simple-en-angular-js
             app.config(['$routeProvider', function($routeProvider){
                 $routeProvider
                 .when('/',{templateUrl:'../view/home.php'})
@@ -26,9 +27,27 @@
                 $scope.producto='';
                 $scope.precio='';
                 $scope.subtotal= parseFloat($scope.subtotal) + parseFloat(precioT);
-                $scope.subtotal=$scope.subtotal.toFixed(2)
+                $scope.subtotal=$scope.subtotal.toFixed(2);
               }; // fin agregar producto
-            
+              $scope.removeRow = function(id, precio){        
+                var index = -1;   
+                var comArr = eval( $scope.datosTortas );
+                for( var i = 0; i < comArr.length; i++ ) {
+                  if( comArr[i].id === id ) {
+                    index = i;
+                    $scope.subtotal= parseFloat($scope.subtotal) - parseFloat(precio);
+                    $scope.subtotal=$scope.subtotal.toFixed(2);
+                    break;
+                  }
+                }
+                if( index === -1 ) {
+                  alert( "Algo salio mal intentelo mas tarde!!!" );
+                }
+                $scope.datosTortas.splice( index, 1 );    
+              }; // fin del row de tabla
+
+
+              
             });
           
     // -------------------------------------------------------------------------------- Directiva para css activar Elemento del menu 
@@ -50,7 +69,6 @@
       }
     }; }]);
     //-------------------------------------------------------------------------------------------------------------------------------
-
     //- --------------------- Funciones para generar numero de orden
     function generaNoOrden(){
       var fecha= new Date();
