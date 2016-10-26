@@ -1,5 +1,6 @@
 
-  var app=angular.module('appventa',['ngRoute','angularModalService'])
+  var app=angular.module('appventa',['ngRoute','angularModalService']);
+  //angularModalService
     // http://es.stackoverflow.com/questions/3193/c%C3%B3mo-puedo-crear-un-di%C3%A1logo-modal-simple-en-angular-js
             app.config(['$routeProvider', function($routeProvider){
                 $routeProvider

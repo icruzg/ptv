@@ -72,7 +72,7 @@
 	
 	<article id="izquierda">
 		<h2>Menu</h2>
-		<input type="button" name="tester" value="Milanesa" ng-click="addRow(3,'Milanesa Pollo','27.00')">
+		   <a ng-click="addRow(3,'Milanesa Pollo','27.00')">Milanesa pollo</a>
 	</article>
 
 </section>

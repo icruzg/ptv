@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/miestilo.css">
 	<script type="text/javascript" src="../js/angular.min.js"></script>
 	<script type="text/javascript" src="../js/angular-route.min.js"></script>
-	<script type="text/javascript" src="../js/appx.js"></script>	
+	<script type="text/javascript" src="../js/appx.js"></script>
+	<script type="text/javascript" src="../js/angular-modalservice.js"></script>
+	
 </head>
 <body ng-app="appventa">
 
