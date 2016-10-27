@@ -140,6 +140,8 @@ footer{
 		color:#FF4000;	
 		font-weight: bold;
 	}
+
+
 /*---------------------------------------- Clases---------------*/
 .bloque-form{
 	
@@ -227,6 +229,8 @@ footer{
 		vertical-align:top;
 		min-height:25em;
 	}
+	
+
 	#panel_botonera{
 		border: 1px solid #c4c4c4;
 		border-radius: 15px;
@@ -409,4 +413,24 @@ footer{
   position: fixed;
   top: 0; left: 0; bottom: 0; right: 0;
   background: rgba(0, 0, 0, 0.5);
+}
+/* estilo para botonera menu tortas o bebidas  */
+.boton2 {
+	display: inline-block;
+	list-style: none;
+	margin: 0.5em 0.5em;
+	vertical-align: top;
+}
+.boton2 a{		
+	background: #FF4000;	
+	
+	color: #6E6E6E;
+	font-size: 0.7em;
+	display: block;
+	min-height: 1.5em;
+	padding: 0.4em 0.5em;
+	text-decoration: none;
+	text-align: center;
+	width: 7em;
+
 }

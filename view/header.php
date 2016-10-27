@@ -7,6 +7,7 @@
 	<title>Punto de Venta</title>
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/miestilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/hover-min.css">
 	<script type="text/javascript" src="../js/angular.min.js"></script>
 	<script type="text/javascript" src="../js/angular-route.min.js"></script>
 	<script type="text/javascript" src="../js/appx.js"></script>

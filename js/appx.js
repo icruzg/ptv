@@ -21,9 +21,11 @@
                // { 'id':'1' ,'producto':'Milanesa', 'precio': 24.00},
                 //{ 'id':'2' ,'producto':'Milanesa Pollo', 'precio': 27.00},
               ];
+               $scope.ElementoVenta=[];
+             llenarDatosBD();
                 $scope.subtotal="0.00";
-              $scope.addRow = function(idT,productoT,precioT){    
-                $scope.datosTortas.push({'id':idT ,'producto':productoT, 'precio': precioT});
+                $scope.addRow = function(idT,productoT,precioT,complementosT){    
+                $scope.datosTortas.push({'id':idT ,'producto':productoT, 'precio': precioT,'complementos':complementosT});
                 $scope.id='';
                 $scope.producto='';
                 $scope.precio='';
@@ -47,7 +49,18 @@
                 $scope.datosTortas.splice( index, 1 );    
               }; // fin del row de tabla
 
-
+             function llenarDatosBD(){
+                 // llenar en la base de datos
+                $scope.ElementoVenta.push(  {'id':'1','Nombre':'Milanesa Pollo','precio':'27.00','complementos':1});                              
+                $scope.ElementoVenta.push(  {'id':'2','Nombre':'Milanesa','precio':'24.00','complementos':1});
+                $scope.ElementoVenta.push(  {'id':'3','Nombre':'Carne Enchilada','precio':'24.00','complementos':1});
+                $scope.ElementoVenta.push( {'id':'4','Nombre':'Salchicha','precio':'17.00','complementos':1});
+                $scope.ElementoVenta.push( {'id':'5','Nombre':'Jamón','precio':'17.00','complementos':1});
+                 $scope.ElementoVenta.push( {'id':'6','Nombre':'Queso de Puerco','precio':'17.00','complementos':1});
+                  $scope.ElementoVenta.push( {'id':'7','Nombre':'Cubana','precio':'38.00','complementos':1});
+                  $scope.ElementoVenta.push( {'id':'8','Nombre':'Cuernito','precio':'17.00','complementos':0});
+               
+              }
               
             });
           
