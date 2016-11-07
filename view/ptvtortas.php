@@ -64,13 +64,12 @@
 					</td>
 					<td data-tip="Agregar Extras">
 						<div ng-if="torta.complementos==1">
-							<a href="" ><img  class="icono" src="../img/add.png"  alt="Agregar Extra"></a>
+							<a href="" ng-click="mostrarModal(torta.id,torta.producto, torta.precio)" ><img  class="icono" src="../img/add.png"  alt="Agregar Extra"></a>
 						</div>
 					</td>
 					<td>$ {{torta.precio}}</td>
 					<td data-tip="Quitar"><a ><img class="icono" src="../img/del.png" ng-click="removeRow(torta.id,torta.precio)" alt="Eliminar"></a></td>
-				</tr>
-				
+				</tr>				
 			</table>
 		</div>
 	
@@ -87,4 +86,5 @@
 		   </table>
 	</article>
 
+  <br>{{ resultadoModal }}
 </section>

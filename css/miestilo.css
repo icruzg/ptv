@@ -434,3 +434,18 @@ footer{
 	width: 7em;
 
 }
+.modal {
+  display: block;
+  border-radius: 35px;
+  padding: 1em;
+  position: fixed;
+  top: 150px; left: 250px; bottom: 150px; right: 250px;
+  background: #fff;
+  z-index: 100;
+}
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}

@@ -11,7 +11,7 @@
                 .when('/printers',{templateUrl:'This is the printers Route'})
                 .otherwise({redirectTo:'/'});
             }]);
-            app.controller('micontroller',function($scope){
+            app.controller('micontroller',function($scope,ModalService){
               $scope.NoOrden =generaNoOrden();   
               
               $scope.getNoOrden=function(){
@@ -61,8 +61,35 @@
                   $scope.ElementoVenta.push( {'id':'8','Nombre':'Cuernito','precio':'17.00','complementos':0});
                
               }
-              
-            });
+              //--- Funcion para modal 
+             $scope.mostrarModal = function(id, nombre, precio) {
+               //console.log(precio);
+            // Debes proveer un controlador y una plantilla.  [{'id':id,'nombre':nombre,'precio':precio}]
+               
+               
+                ModalService.showModal({
+                  templateUrl: '../view/ventanaModal.php?torta='+nombre+'&precio='+ precio+'&id='+id,//'<div class="overlay"/><div class="modal"><h1>'+ nombre+ '</h1> <select ng-model="result"> <option value="0" selected >Selecciona Extra</option> <option value="1">Quesillo</option><option value="2">Jamón</option> <option value="3"> Queso de Puerco</option><option value="4">Otros</option></select> <button ng-click="cerrarModal()">Cerrar</button></div>',
+                  controller: "ContrladorModal"
+                }).then(function(modal) {
+                  modal.close.then(function(result) {
+                    // Una vez que el modal sea cerrado, la libreria invoca esta función
+                    // y en result tienes el resultado.
+                    $scope.resultadoModal = result;
+                  });
+                });
+              //<input type="text" ng-model="result">
+              };
+              //------
+            });  // < --- fin controller app 
+
+      // controlador para pantalla modal 
+      app.controller('ContrladorModal', function($scope, close) {
+        $scope.result = "Esta es la respuesta";
+        $scope.cerrarModal = function() {
+          close($scope.result);
+        };
+      });
+
           
     // -------------------------------------------------------------------------------- Directiva para css activar Elemento del menu 
     app.directive('activeLink', ['$location', function (location) {
@@ -83,6 +110,7 @@
       }
     }; }]);
     //-------------------------------------------------------------------------------------------------------------------------------
+
     //- --------------------- Funciones para generar numero de orden
     function generaNoOrden(){
       var fecha= new Date();
